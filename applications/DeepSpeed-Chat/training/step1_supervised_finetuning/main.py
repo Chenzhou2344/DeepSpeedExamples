@@ -17,6 +17,10 @@ from transformers import (
     get_scheduler,
 )
 
+import sys
+import os
+sys.path.append('/home/yons/lsy/DeepSpeedExamples/applications/DeepSpeed-Chat/')
+
 import deepspeed
 from deepspeed.ops.adam import DeepSpeedCPUAdam, FusedAdam
 from deepspeed import get_accelerator
